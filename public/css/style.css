@@ -1,0 +1,63 @@
+body {
+    background-color: #fff;
+    color: black;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+li {
+    padding-left: 20px;
+}
+
+.navbar-dark {
+    background-color: #e3f2fd;
+}
+
+.todo-item {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: red;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-delete-todo {
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    height: 4rem;
+    background-color: rgb(221, 220, 213) !important;
+    font-size: 1.3rem !important;
+}
+
+.nav-item {
+    padding: 1rem auto !important;
+}
+
+.news {
+    margin-top: 5px;
+}
+
+.title-page {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

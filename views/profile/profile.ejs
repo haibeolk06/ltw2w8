@@ -1,0 +1,15 @@
+<form class="form" action="/profile" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username" value="<%= currentUser.username %>">
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" value="<%= currentUser.email %>">
+    </div>
+    <div class="form-group">
+        <label for="avatar"><b>Upload Image</b></label>
+        <input type="file" class="form-control-file" id="picture" name="picture">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

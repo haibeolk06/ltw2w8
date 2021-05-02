@@ -1,0 +1,13 @@
+<% news.forEach(function (item) { %>
+    <div class="card news" style="width: 90vw">
+        <div class="card-body">
+            <h5 class="card-title">
+                <%= item.title %>
+            </h5>
+            <p class="card-text">
+                <%= item.contentSnippet %>
+            </p>
+            <a href="<%= item.link %>" target="_blank" class="btn btn-primary">View</a>
+        </div>
+    </div>
+    <% }) %>

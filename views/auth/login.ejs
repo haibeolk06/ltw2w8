@@ -1,0 +1,25 @@
+<form action="/login" method="POST">
+    <% if(message) {%>
+        <div class="alert alert-success" role="alert">
+            <center>
+                <%= message  %>
+            </center>
+        </div>
+        <% } %>
+            <% if(messageErr) {%>
+                <div class="alert alert-danger" role="alert">
+                    <center>
+                        <%= messageErr  %>
+                    </center>
+                </div>
+                <% } %>
+                    <div class="mb-3">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+</form>

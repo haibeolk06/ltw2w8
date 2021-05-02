@@ -1,0 +1,15 @@
+<form action="/addTodo" class="col-6 mx-auto" method="POST">
+    <div class="input-group">
+        <input type="text" class="form-control" name="todo" placeholder="Enter Todo Item">
+        <span><button type="submit" class="btn btn-primary">Submit</button></span>
+    </div>
+</form>
+<ul class="list-group col-8 mx-auto">
+    <% todos.forEach(function (item) { %>
+        <li class="list-group-item todo-item">
+            <%= item.content %>
+                <a href="/delete/todo/<%=item.id %>" class="btn btn-danger btn-sm btn-delete-todo">Delete</a>
+        </li>
+
+        <% }) %>
+</ul>
